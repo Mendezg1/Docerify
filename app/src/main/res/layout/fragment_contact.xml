@@ -4,14 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4CAF50">
+    android:background="@drawable/esquinasr">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:background="@color/teal_700"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="-10dp">
+        android:id="@+id/relativeLayout"
+        android:layout_width="417dp"
+        android:layout_height="105dp"
+        android:background="@drawable/fondov"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-10dp"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/button1"
@@ -35,8 +38,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="34dp"
-            android:layout_marginEnd="22dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="86dp"
             android:text="Joe Doe"
             android:textColor="@color/white"
             android:textSize="40sp"
@@ -44,46 +47,50 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="76dp"
 
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="104dp"
-            android:layout_marginTop="34dp"
-            android:layout_marginEnd="246dp"
-            android:layout_marginBottom="26dp"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="262dp"
+            android:layout_marginBottom="13dp"
             android:background="@drawable/persona"
             tools:srcCompat="@tools:sample/avatars" />
-
     </RelativeLayout>
 
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="72dp"
-        android:layout_height="62dp"
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="60dp"
+        android:layout_height="59dp"
+        android:background="@drawable/redondos"
+        android:backgroundTint="@color/black"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="▶"
+        android:textAlignment="gravity"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
         app:layout_constraintStart_toEndOf="@+id/msg"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.959"
-        app:srcCompat="@android:drawable/ic_media_play" />
+        app:layout_constraintVertical_bias="0.955" />
 
     <EditText
         android:id="@+id/msg"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="#30ffffff"
+        android:background="@drawable/fondob"
         android:drawablePadding="20dp"
         android:hint="Escribe un mensaje aquí"
         android:padding="20dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
