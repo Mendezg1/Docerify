@@ -7,6 +7,7 @@
     android:background="@drawable/fondo">
 
     <RelativeLayout
+        android:id="@+id/relativeLayout1"
         android:layout_width="414dp"
         android:layout_height="162dp"
         android:background="@drawable/esquinasr"
@@ -15,32 +16,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="154dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="112dp"
-            android:layout_marginBottom="83dp"
-            android:text="Joe Doe \n Fisica III"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="85dp"
+                android:layout_marginBottom="41dp"
+                android:text="Joe Doe \n Fisica III"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="143dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="255dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="29dp"
-            android:background="@drawable/redondos"
-            android:text="Contactar" />
-
-        <ImageView
+            <ImageView
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="122dp"
@@ -48,6 +36,10 @@
             android:layout_alignParentBottom="true"
             android:layout_marginTop="21dp"
             android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/persona"
+            android:padding="30dp"
             tools:srcCompat="@tools:sample/avatars" />
 
 
@@ -65,31 +57,19 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints">
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="156dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="106dp"
-            android:layout_marginBottom="83dp"
-            android:text="Jane Doe \n Calculo I"
-            android:textColor="#FFF"
-            android:textSize="30sp" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="91dp"
+                android:layout_marginBottom="44dp"
+                android:text="Jane Doe \n Calculo I"
+                android:textColor="#FFF"
+                android:textSize="30sp" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="143dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="240dp"
-            android:layout_marginEnd="14dp"
-            android:layout_marginBottom="28dp"
-            android:background="@drawable/redondos"
-            android:text="Contactar" />
-
-        <ImageView
+            <ImageView
             android:id="@+id/imageView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -97,6 +77,10 @@
             android:layout_alignParentBottom="true"
             android:layout_marginTop="17dp"
             android:layout_marginBottom="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/persona"
+            android:padding="30dp"
             tools:srcCompat="@tools:sample/avatars" />
 
     </RelativeLayout>
@@ -111,39 +95,33 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints">
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="214dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="54dp"
-            android:layout_marginBottom="76dp"
-            android:text="Jose Peréz \n Calculo III"
-            android:textColor="#FFF"
-            android:textSize="30sp" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="214dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="47dp"
+                android:layout_marginBottom="42dp"
+                android:text="Jose Peréz \n Calculo III"
+                android:textColor="#FFF"
+                android:textSize="30sp" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="143dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="240dp"
-            android:layout_marginEnd="14dp"
-            android:layout_marginBottom="28dp"
-            android:background="@drawable/redondos"
-            android:text="Contactar" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="23dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/persona"
+                android:padding="30dp"
+                tools:srcCompat="@tools:sample/avatars" />
 
     </RelativeLayout>
 

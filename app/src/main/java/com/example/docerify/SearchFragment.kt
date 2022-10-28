@@ -27,20 +27,22 @@ class SearchFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.button1.setOnClickListener(){
+        binding.relativeLayout1.setOnClickListener(){
             val action = SearchFragmentDirections.toContact()
             this.findNavController().navigate(action)
         }
 
-        binding.button2.setOnClickListener(){
+        binding.relativeLayout4.setOnClickListener(){
             val action = SearchFragmentDirections.toContact()
             this.findNavController().navigate(action)
         }
 
-        binding.button3.setOnClickListener(){
+        binding.relativeLayout3.setOnClickListener(){
             val action = SearchFragmentDirections.toContact()
             this.findNavController().navigate(action)
         }
+
+
 
         binding.back.setOnClickListener(){
             val action = SearchFragmentDirections.toMain()
