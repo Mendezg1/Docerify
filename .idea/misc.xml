@@ -5,12 +5,13 @@
       <map>
         <entry key="..\:/Dcuellar/Descarga/Docerify/app/src/main/res/drawable-v24/fondoB.xml" value="0.2265" />
         <entry key="..\:/Dcuellar/Descarga/Docerify/app/src/main/res/drawable-v24/fondoV.xml" value="0.2265" />
+        <entry key="..\:/Dcuellar/Descarga/Docerify/app/src/main/res/drawable-v24/fondob.xml" value="0.2265" />
         <entry key="..\:/Dcuellar/Descarga/Docerify/app/src/main/res/drawable-v24/fondov.xml" value="0.2265" />
         <entry key="..\:/Dcuellar/Descarga/Docerify/app/src/main/res/drawable/esquinasr.xml" value="0.2265" />
         <entry key="..\:/Dcuellar/Descarga/Docerify/app/src/main/res/drawable/redondos.xml" value="0.2265" />
         <entry key="..\:/Dcuellar/Descarga/Docerify/app/src/main/res/layout/activity_main.xml" value="0.15896739130434784" />
-        <entry key="..\:/Dcuellar/Descarga/Docerify/app/src/main/res/layout/fragment_contact.xml" value="0.264" />
-        <entry key="..\:/Dcuellar/Descarga/Docerify/app/src/main/res/layout/fragment_main.xml" value="0.15896739130434784" />
+        <entry key="..\:/Dcuellar/Descarga/Docerify/app/src/main/res/layout/fragment_contact.xml" value="0.25416666666666665" />
+        <entry key="..\:/Dcuellar/Descarga/Docerify/app/src/main/res/layout/fragment_main.xml" value="0.2" />
         <entry key="..\:/Dcuellar/Descarga/Docerify/app/src/main/res/layout/fragment_search.xml" value="0.264" />
       </map>
     </option>
