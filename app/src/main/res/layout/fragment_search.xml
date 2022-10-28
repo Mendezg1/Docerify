@@ -10,10 +10,16 @@
         android:layout_width="414dp"
         android:layout_height="162dp"
         android:background="@drawable/esquinasr"
+<<<<<<< Updated upstream
         app:layout_constraintBottom_toTopOf="@+id/relativeLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+=======
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3"
+        tools:layout_editor_absoluteX="-2dp">
+>>>>>>> Stashed changes
 
         <TextView
             android:id="@+id/textView2"
@@ -54,15 +60,24 @@
 
 
     <RelativeLayout
+<<<<<<< Updated upstream
         android:id="@+id/relativeLayout3"
+=======
+        android:id="@+id/relativeLayout2"
+>>>>>>> Stashed changes
         android:layout_width="414dp"
         android:layout_height="162dp"
         android:layout_marginBottom="44dp"
         android:background="@drawable/esquinasr"
         app:layout_constraintBottom_toTopOf="@+id/relativeLayout4"
+<<<<<<< Updated upstream
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints">
+=======
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp">
+>>>>>>> Stashed changes
 
         <TextView
             android:id="@+id/textView4"
@@ -100,15 +115,22 @@
 
     </RelativeLayout>
 
+
     <RelativeLayout
         android:id="@+id/relativeLayout4"
         android:layout_width="414dp"
         android:layout_height="162dp"
         android:background="@drawable/esquinasr"
+<<<<<<< Updated upstream
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints">
+=======
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="456dp">
+>>>>>>> Stashed changes
 
         <TextView
             android:id="@+id/textView3"
@@ -147,7 +169,11 @@
     </RelativeLayout>
 
     <RelativeLayout
+<<<<<<< Updated upstream
         android:id="@+id/relativeLayout2"
+=======
+        android:id="@+id/relativeLayout3"
+>>>>>>> Stashed changes
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:background="@drawable/fondov"
