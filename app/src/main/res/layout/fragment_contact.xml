@@ -13,7 +13,7 @@
         tools:layout_editor_absoluteX="15dp"
         tools:layout_editor_absoluteY="-10dp">
 
-        <Button
+        <ImageView
             android:id="@+id/button1"
             android:layout_width="40dp"
             android:layout_height="30dp"

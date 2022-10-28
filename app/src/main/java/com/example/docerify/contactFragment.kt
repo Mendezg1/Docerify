@@ -27,7 +27,12 @@ class contactFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        
+
+        binding.button1.setOnClickListener(){
+            val action = contactFragmentDirections.toSearch()
+            this.findNavController().navigate(action)
+        }
+
 
 
     }
