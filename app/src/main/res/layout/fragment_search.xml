@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF">
+    android:background="@drawable/fondo">
 
     <RelativeLayout
         android:layout_width="414dp"
@@ -49,6 +49,7 @@
             android:layout_marginTop="21dp"
             android:layout_marginBottom="15dp"
             tools:srcCompat="@tools:sample/avatars" />
+            
 
     </RelativeLayout>
 
