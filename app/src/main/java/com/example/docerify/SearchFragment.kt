@@ -42,7 +42,7 @@ class SearchFragment : Fragment() {
             this.findNavController().navigate(action)
         }
 
-        binding.button4.setOnClickListener(){
+        binding.back.setOnClickListener(){
             val action = SearchFragmentDirections.toMain()
             this.findNavController().navigate(action)
         }
