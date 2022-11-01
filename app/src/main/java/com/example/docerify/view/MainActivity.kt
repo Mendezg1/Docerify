@@ -1,12 +1,12 @@
-package com.example.docerify
+package com.example.docerify.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.example.docerify.R
 import com.example.docerify.databinding.ActivityMainBinding
-import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,7 +20,13 @@ class MainActivity : AppCompatActivity() {
 
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment
         navController= navHostFragment.navController
-        //setupActionBarWithNavController(navController)
-
+        setupActionBarWithNavController(navController)
     }
+
+
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp() || super.onSupportNavigateUp()
+    }
+
+
 }

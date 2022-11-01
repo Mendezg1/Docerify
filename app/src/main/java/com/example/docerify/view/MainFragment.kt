@@ -1,20 +1,17 @@
-package com.example.docerify
+package com.example.docerify.view
 
+import android.app.Activity
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
-import androidx.navigation.Navigation
+import androidx.fragment.app.FragmentActivity
 import androidx.navigation.fragment.findNavController
 import com.example.docerify.databinding.FragmentMainBinding
 
 class MainFragment : Fragment() {
-    // TODO: Rename and change types of parameters
     private var _binding: FragmentMainBinding? = null
     private val binding get() = _binding!!
 
@@ -27,10 +24,12 @@ class MainFragment : Fragment() {
         return binding.root
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.loginbtn.setOnClickListener(){
-            val action = MainFragmentDirections.toSearch()
+
+        binding.loginbtn.setOnClickListener{
+            val action = MainFragmentDirections.toClasses()
             val user: TextView = binding.usuario
             val pass : TextView = binding.password
 

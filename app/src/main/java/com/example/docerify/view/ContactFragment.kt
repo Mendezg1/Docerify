@@ -1,4 +1,4 @@
-package com.example.docerify
+package com.example.docerify.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.docerify.databinding.FragmentContactBinding
-import com.example.docerify.databinding.FragmentSearchBinding
 
 class contactFragment : Fragment() {
 
@@ -29,7 +28,7 @@ class contactFragment : Fragment() {
 
 
         binding.button1.setOnClickListener(){
-            val action = contactFragmentDirections.toSearch()
+            val action = com.example.docerify.view.contactFragmentDirections.toSearch()
             this.findNavController().navigate(action)
         }
 
