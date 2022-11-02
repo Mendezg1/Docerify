@@ -23,17 +23,4 @@ class contactFragment : Fragment() {
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-
-        binding.button1.setOnClickListener(){
-            val action = com.example.docerify.view.contactFragmentDirections.toSearch()
-            this.findNavController().navigate(action)
-        }
-
-
-
-    }
-
 }

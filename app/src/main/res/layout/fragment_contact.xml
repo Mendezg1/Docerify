@@ -8,29 +8,14 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="417dp"
+        android:layout_width="match_parent"
         android:layout_height="105dp"
-        android:background="@drawable/fondov"
+        android:background="#0D7816"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="0dp"
         tools:layout_editor_absoluteY="-10dp"
         tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:id="@+id/button1"
-            android:layout_width="40dp"
-            android:layout_height="30dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="13dp"
-            android:layout_marginTop="39dp"
-            android:layout_marginEnd="28dp"
-            android:layout_marginBottom="33dp"
-
-            android:background="@drawable/ic_baseline_west_24"
-            android:textColor="#FFFFFF"
-            app:iconTint="#FFFFFFFF" />
 
         <TextView
             android:id="@+id/textView"
@@ -38,28 +23,47 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="86dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="76dp"
+            android:layout_toEndOf="@+id/card"
             android:text="Joe Doe"
             android:textColor="@color/white"
             android:textSize="40sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.857"
+            app:layout_constraintStart_toEndOf="@id/card"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.036" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="100dp"
-            android:layout_height="76dp"
-
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="59dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="262dp"
-            android:layout_marginBottom="13dp"
-            android:background="@drawable/persona"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:layout_marginStart="38dp"
+            android:layout_marginBottom="14dp"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="1.9"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="40dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/persona"
+                tools:srcCompat="@tools:sample/avatars" />
+
+        </androidx.cardview.widget.CardView>
     </RelativeLayout>
 
 
