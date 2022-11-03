@@ -9,7 +9,6 @@ class ClassRepository {
             "Química",
             "Matemática",
             "Cálculo",
-            "Química",
             "Programación",
             "Circuitos",
             "Biología"

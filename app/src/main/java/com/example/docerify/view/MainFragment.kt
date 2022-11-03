@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.FragmentActivity
 import androidx.navigation.fragment.findNavController
 import com.example.docerify.databinding.FragmentMainBinding
@@ -36,6 +37,8 @@ class MainFragment : Fragment() {
             if(user.text.toString() == "admin" && pass.text.toString() == "admin"){
                 this.findNavController().navigate(action)
             }
+            else
+                Toast.makeText(activity,"INICIO DE SESIÓN FALLIDO",Toast.LENGTH_SHORT)
         }
 
     }
