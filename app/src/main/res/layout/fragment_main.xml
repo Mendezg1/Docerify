@@ -98,6 +98,19 @@
         android:layout_marginBottom="20dp"
         android:text="INICIAR SESIÓN" />
 
+    <ImageView
+        android:id="@+id/google"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@+id/loginbtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="119dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/google"
+        tools:srcCompat="@tools:sample/avatars" />
 
 
 </RelativeLayout>
