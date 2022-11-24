@@ -25,6 +25,9 @@
         <action
             android:id="@+id/toContact"
             app:destination="@id/contactFragment" />
+        <argument
+            android:name="clase"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/contactFragment"

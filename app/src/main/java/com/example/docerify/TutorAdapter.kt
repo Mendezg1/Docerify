@@ -2,12 +2,17 @@ package com.example.docerify
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentActivity
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.docerify.databinding.VistaTutoresBinding
 import com.example.docerify.view.SearchFragmentDirections
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 
-class TutorAdapter(private val tutorList: List<String>): RecyclerView.Adapter<TutorAdapter.TutorHolder>() {
+class TutorAdapter(
+    private val tutorList: List<String>,
+): RecyclerView.Adapter<TutorAdapter.TutorHolder>() {
 
     inner class TutorHolder(val binding: VistaTutoresBinding): RecyclerView.ViewHolder(binding.root)
 
@@ -24,6 +29,7 @@ class TutorAdapter(private val tutorList: List<String>): RecyclerView.Adapter<Tu
 
         val action = SearchFragmentDirections.toContact()
         holder.binding.root.setOnClickListener(){
+
             holder.itemView.findNavController().navigate(action)
         }
     }

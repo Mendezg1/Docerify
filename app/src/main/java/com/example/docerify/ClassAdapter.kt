@@ -20,8 +20,8 @@ class ClassAdapter(private val classList: List<String>): RecyclerView.Adapter<Cl
         val item = classList[position]
         holder.binding.nombreClase.text = item
 
-        val action = ClassesFragmentDirections.toSearch()
-        holder.binding.root.setOnClickListener(){
+        val action = ClassesFragmentDirections.toSearch(item)
+        holder.binding.root.setOnClickListener {
             holder.itemView.findNavController().navigate(action)
         }
     }
